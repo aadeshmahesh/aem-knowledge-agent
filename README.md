@@ -242,34 +242,6 @@ The AI lives in the agent. ✅
 
 ---
 
-## Interview Talking Points
-
-```
-"How do you reduce LLM costs?"
-  → Redis cache (80% reduction)
-  → SQL for structured lookups (free)
-  → Haiku for simple questions
-  → Limit search results to top 3
-
-"How would you scale this?"
-  → Redis cache for repeated queries
-  → Queue-based async processing
-  → Multiple worker instances
-  → Read replicas for DB
-
-"Why hybrid search?"
-  → SQL keyword: fast, exact, free
-  → Vector semantic: finds meaning
-  → Hybrid: best of both worlds
-  → Configurable for different use cases
-
-"Could this work in Slack?"
-  → Yes — POST /ask is already REST
-  → Slack sends webhook → we respond
-  → Integration is trivial
-  → The AI quality is what matters
-```
-
 ---
 
 ## How It Works — Step by Step
